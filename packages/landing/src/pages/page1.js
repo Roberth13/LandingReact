@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import Head from 'next/head';
+import BannerSection from 'containers/Agency/BannerSection';
 import { ThemeProvider } from 'styled-components';
 import Sticky from 'react-stickynode';
 import Footer from 'containers/App/Footer';
@@ -40,9 +41,10 @@ const Page1 = () => {
 		              <Navbar />
 		            </DrawerProvider>
 	            </Sticky>
+				<BannerSection />
                 <ContentWrapper>
                 	{/* Content */}
-	        	   <h1>PRUEBA</h1>
+	        	   <h1>PRUEBA esto es un h1</h1>
 	        	</ContentWrapper>
 	        	<Footer />
 	        </Page1Wrapper>

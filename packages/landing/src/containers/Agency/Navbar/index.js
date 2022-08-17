@@ -12,7 +12,7 @@ import SearchPanel from '../SearchPanel';
 import LoginModal from '../LoginModal';
 import CopyrightSection from '../CopyrightsSection';
 
-import LogoImage from 'common/assets/image/agency/logo.png';
+import LogoImage from 'common/assets/image/agency/landing_page_logo_maker_logo.jpg';
 
 import { DrawerContext } from 'common/contexts/DrawerContext';
 
