@@ -3,11 +3,16 @@ import Head from 'next/head';
 import BannerSection from 'containers/Agency/BannerSection';
 import { ThemeProvider } from 'styled-components';
 import Sticky from 'react-stickynode';
-import Footer from 'containers/App/Footer';
+//import Footer from 'containers/App/Footer';
 import Navbar from 'containers/App/Navbar';
 import { DrawerProvider } from 'common/contexts/DrawerContext';
 import ResetCSS from 'common/assets/css/style';
 import { page1Theme } from 'common/theme/page1';
+import Footer from 'containers/Interior/Footer';
+import DomainSection from 'containers/App/Banner';
+import TestimonialSection from 'containers/Agency/TestimonialSection';
+import AboutUsSection from 'containers/Agency/AboutUsSection';
+import FeatureSection from 'containers/Agency/FeatureSection';
 import {
   GlobalStyle,
   Page1Wrapper,
@@ -37,6 +42,7 @@ const Page1 = () => {
 	        <GlobalStyle />
 	        <Page1Wrapper>
 		        <Sticky top={0} innerZ={9999} activeClass="sticky-nav-active">
+				
 		            <DrawerProvider>
 		              <Navbar />
 		            </DrawerProvider>
@@ -46,6 +52,9 @@ const Page1 = () => {
                 	{/* Content */}
 	        	   <h1>PRUEBA esto es un h1</h1>
 	        	</ContentWrapper>
+				<FeatureSection />
+				<AboutUsSection />
+				<TestimonialSection />
 	        	<Footer />
 	        </Page1Wrapper>
 			</Fragment>

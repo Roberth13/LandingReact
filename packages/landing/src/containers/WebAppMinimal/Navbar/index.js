@@ -5,7 +5,7 @@ import { openModal, closeModal } from '@redq/reuse-modal';
 import NavbarWrapper from 'common/components/Navbar';
 import Drawer from 'common/components/Drawer';
 import Button from 'common/components/Button';
-import Logo from 'common/components/UIElements/Logo';
+import Logo from 'common/components/UIElements/logo';
 import Box from 'common/components/Box';
 import HamburgMenu from 'common/components/HamburgMenu';
 import Container from 'common/components/UI/Container';
@@ -16,8 +16,8 @@ import ScrollSpyMenu from 'common/components/ScrollSpyMenu';
 import LoginModal from '../LoginModal';
 
 import lockIcon from 'common/assets/image/webAppMinimal/icons/lock.svg';
-import logo from 'common/assets/image/webAppMinimal/logo.svg';
-import logoWhite from 'common/assets/image/webAppMinimal/logo-white.svg';
+import logo from 'common/assets/image/webAppMinimal/landing-page-makers-logo-black.svg';
+import logoWhite from 'common/assets/image/webAppMinimal/landing-page-makers-logo-white.svg';
 
 // Default close button for modal
 const CloseModalButton = () => (

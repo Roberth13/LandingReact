@@ -25,7 +25,7 @@ export const menuData = [
   },
   {
     label: 'About',
-    path: '#aboutUs',
+    path: '/page1',
     offset: '80',
   },
   {

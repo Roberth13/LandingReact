@@ -1,66 +1,77 @@
-import React, { Fragment } from 'react';
+import 'animate.css';
+import ResetCSS from 'common/assets/css/style';
+import { DrawerProvider } from 'common/contexts/DrawerContext';
+import { theme } from 'common/theme/webAppMinimal';
+import AnalyticsTool from 'containers/WebAppMinimal/AnalyticsTool';
+import Banner from 'containers/WebAppMinimal/Banner';
+import CallToAction from 'containers/WebAppMinimal/CallToAction';
+import Clients from 'containers/WebAppMinimal/Clients';
+import Dashboard from 'containers/WebAppMinimal/Dashboard';
+import Faq from 'containers/WebAppMinimal/Faq';
+import Footer from 'containers/WebAppMinimal/Footer';
+import HowItWorks from 'containers/WebAppMinimal/HowItWorks';
+import Navbar from 'containers/WebAppMinimal/Navbar';
+import NewsFeed from 'containers/WebAppMinimal/NewsFeed';
+import OurCommunity from 'containers/WebAppMinimal/OurCommunity';
+import Pricing from 'containers/WebAppMinimal/Pricing';
+import Testimonials from 'containers/WebAppMinimal/Testimonials';
+import {
+  ContentWrapper, GlobalStyle
+} from 'containers/WebAppMinimal/webAppMinimal.style';
 import Head from 'next/head';
+import React, { Fragment } from 'react';
 import Sticky from 'react-stickynode';
 import { ThemeProvider } from 'styled-components';
-import { agencyTheme } from 'common/theme/agency';
-import ResetCSS from 'common/assets/css/style';
-import { GlobalStyle, AgencyWrapper } from 'containers/Agency/agency.style';
-import Navbar from 'containers/Agency/Navbar';
-import BannerSection from 'containers/Agency/BannerSection';
-import FeatureSection from 'containers/Agency/FeatureSection';
-import AboutUsSection from 'containers/Agency/AboutUsSection';
-import WorkHistory from 'containers/Agency/WorkHistory';
-import BlogSection from 'containers/Agency/BlogSection';
-import TestimonialSection from 'containers/Agency/TestimonialSection';
-import TeamSection from 'containers/Agency/TeamSection';
-import VideoSection from 'containers/Agency/VideoSection';
-import NewsletterSection from 'containers/Agency/NewsletterSection';
-import QualitySection from 'containers/Agency/QualitySection';
-import Footer from 'containers/Agency/Footer';
-import { DrawerProvider } from 'common/contexts/DrawerContext';
-import FaqSection from 'containers/Agency/FaqSection';
+import BannerSection from 'containers/SaasClassic/Banner';
+import {
+  BannerWrapper,
+  DiscountWrapper,
+  DiscountLabel,
+  VideoModal,
+  PlayButton,
+  VideoWrapper,
+} from './banner.style';
 
-const Main = () => {
+const WebAppMinimal = () => {
   return (
-    <ThemeProvider theme={agencyTheme}>
+    <ThemeProvider theme={theme}>
       <Fragment>
-        {/* Start agency head section */}
         <Head>
-          <title>Agency | A react next landing page</title>
-          <meta name="theme-color" content="#10ac84" />
+          <title>Web App Minimal | A react next landing page</title>
           <meta name="Description" content="React next landing page" />
+          <meta name="theme-color" content="#ec5555" />
           {/* Load google fonts */}
+          <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
-            href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"
             rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
           />
         </Head>
+
         <ResetCSS />
         <GlobalStyle />
-        {/* End of agency head section */}
-        {/* Start agency wrapper section */}
-        <AgencyWrapper>
+
+        <ContentWrapper>
           <Sticky top={0} innerZ={9999} activeClass="sticky-nav-active">
             <DrawerProvider>
               <Navbar />
             </DrawerProvider>
           </Sticky>
-          <BannerSection />
-          <FeatureSection />
-          <AboutUsSection />
-          <WorkHistory />
-          <BlogSection />
-          <QualitySection />
-          <VideoSection />
-          <TestimonialSection />
-          <TeamSection />
-          <FaqSection />
-          <NewsletterSection />
+          <Banner />
+          <Clients />
+          <HowItWorks />
+          <AnalyticsTool />
+          <Dashboard />
+          <Testimonials />
+          <Pricing id="pricing" />
+          <NewsFeed />
+          <OurCommunity />
+          <Faq />
+          <CallToAction />
           <Footer />
-        </AgencyWrapper>
-        {/* End of agency wrapper section */}
+        </ContentWrapper>
       </Fragment>
     </ThemeProvider>
   );
 };
-export default Main;
+export default WebAppMinimal;

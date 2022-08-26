@@ -71,9 +71,9 @@ const data = {
     {
       id: 1,
       icon: 'flaticon-flask',
-      title: 'Search Optimization',
+      title: 'Search Optimization testing',
       description:
-        'By using Search Engine Optimization, You will get more Clients',
+        'By using Search Engine Optimization, You will get more Clients hola elvin',
     },
     {
       id: 2,
