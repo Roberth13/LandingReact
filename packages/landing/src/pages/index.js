@@ -22,15 +22,6 @@ import Head from 'next/head';
 import React, { Fragment } from 'react';
 import Sticky from 'react-stickynode';
 import { ThemeProvider } from 'styled-components';
-import BannerSection from 'containers/SaasClassic/Banner';
-import {
-  BannerWrapper,
-  DiscountWrapper,
-  DiscountLabel,
-  VideoModal,
-  PlayButton,
-  VideoWrapper,
-} from './banner.style';
 
 const WebAppMinimal = () => {
   return (
