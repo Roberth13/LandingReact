@@ -8,9 +8,8 @@ const Section = styled.section`
   background-color: #011336;
   position: relative;
   z-index: 0;
-  padding-bottom:30px;
   &::after {
-    background-color: transparent;
+    background-color: #fff;
     content: '';
     position: absolute;
     width: 100%;

@@ -2,11 +2,14 @@ import React from 'react';
 import Container from 'common/components/UI/Container';
 import Heading from 'common/components/Heading';
 import Text from 'common/components/Text';
+import NextImage from 'common/components/NextImage';
 import Section, {
   Pattern,
   BannerContentWrapper,
   BannerContent,
+  Figure
 } from './banner.style';
+import dashboard from 'common/assets/image/webAppMinimal/dashboard.png';
 
 const Banner = () => {
   return (
@@ -24,7 +27,7 @@ const Banner = () => {
               content="Join 30,000+ businesses that use Segment's software and APIs to collect, clean, and control their customer data."
             />
           </BannerContent>
-          <div className="animate__animated animate__fadeInUp animate__fast">
+          {/* <div className="animate__animated animate__fadeInUp animate__fast">
             <script src="https://fast.wistia.com/embed/medias/ux6ahuak0p.jsonp" async></script>
             <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
             <div className="wistia_responsive_padding" style={{padding: '56.25% 0 0 0', position: 'relative'}}>
@@ -36,7 +39,10 @@ const Banner = () => {
                     </div>
                 </div>
             </div>
-          </div>
+          </div> */}
+          <Figure className="animate__animated animate__fadeInUp animate__fast">
+            <NextImage />
+          </Figure>
         </BannerContentWrapper>
       </Container>
     </Section>
