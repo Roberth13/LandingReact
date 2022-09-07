@@ -8,6 +8,7 @@ const Section = styled.section`
   background-color: #011336;
   position: relative;
   z-index: 0;
+  height: 1175px;
   &::after {
     background-color: #fff;
     content: '';
@@ -15,6 +16,7 @@ const Section = styled.section`
     width: 100%;
     bottom: -1px;
     height: 45px;
+    display: none; 
     @media only screen and (min-width: 768px) {
       bottom: -1px;
       height: 80px;
