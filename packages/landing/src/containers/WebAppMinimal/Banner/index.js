@@ -17,7 +17,7 @@ const Banner = () => {
       <Pattern />
       <Container width="1200px">
         <BannerContentWrapper>
-          <BannerContent height="600px">
+          <BannerContent>
             <Heading
               className="animate__animated animate__fadeInUp"
               content="The leading Customer dashboard for your daily workspace"
@@ -42,9 +42,9 @@ const Banner = () => {
           </div> */}
           <Figure className="animate__animated animate__fadeInUp animate__fast">
             <div className="animate__animated animate__fadeInUp animate__fast">
-            <script src="https://fast.wistia.com/embed/medias/ux6ahuak0p.jsonp" async></script>
+            <script src="https://fast.wistia.com/embed/medias/ktqhy4f3wv.jsonp" async></script>
             <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
-            <div className="wistia_embed wistia_async_ux6ahuak0p" style={{height:'585px',position:'relative',width:'1040px'}}>&nbsp;</div>
+            <div className="wistia_embed wistia_async_ktqhy4f3wv" style={{height:'585px',position:'relative',width:'1040px'}}>&nbsp;</div>
           </div>
           </Figure>
         </BannerContentWrapper>
