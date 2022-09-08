@@ -10,6 +10,7 @@ import Section, {
   Figure
 } from './banner.style';
 import dashboard from 'common/assets/image/webAppMinimal/dashboard.png';
+import { bottom } from 'styled-system';
 
 const Banner = () => {
   return (
@@ -41,10 +42,14 @@ const Banner = () => {
             </div>
           </div> */}
           <Figure className="animate__animated animate__fadeInUp animate__fast">
-            <div className="animate__animated animate__fadeInUp animate__fast">
-            <script src="https://fast.wistia.com/embed/medias/ktqhy4f3wv.jsonp" async></script>
-            <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
-            <div className="wistia_embed wistia_async_ktqhy4f3wv" style={{height:'585px',position:'relative',width:'1040px'}}>&nbsp;</div>
+          <div className="animate__animated animate__fadeInUp animate__fast">
+          <script src="https://fast.wistia.com/embed/medias/ktqhy4f3wv.jsonp" async></script>
+          <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+          <div className="wistia_responsive_padding" style={{padding:'56.25% 0 0 0',position:'relative',marginBottom:'100px'}}>
+            <div className="wistia_responsive_wrapper" style={{height:'100%',left:'0',position:'absolute',top:'0',width:'100%',marginBottom:'70px'}}>
+              <div className="wistia_embed wistia_async_ktqhy4f3wv videoFoam=true" style={{height:'100%',position:'relative',width:'100%',}}>&nbsp;</div>
+              </div>
+              </div>
           </div>
           </Figure>
         </BannerContentWrapper>

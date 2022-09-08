@@ -8,15 +8,41 @@ const Section = styled.section`
   background-color: #011336;
   position: relative;
   z-index: 0;
-  height: 1175px;
+  height: 1275px;
+
+  @media only screen and (max-width: 1258px) {
+    height: 945px;
+  }
+  @media only screen and (max-width: 946px) {
+    height: 855px;
+  }
+
+  @media only screen and (max-width: 700px) {
+    height: 750px;
+  }
+
+  @media only screen and (max-width: 500px) {
+    height: 750px;
+  }
+
+  @media only screen and (max-width: 488px) {
+    height: 711px;
+  }
+  @media only screen and (max-width: 430px) {
+    height: 576px;
+  }
+
+ 
+
   &::after {
-    background-color: #fff;
+    background-color: #011336;
     content: '';
     position: absolute;
     width: 100%;
     bottom: -1px;
     height: 45px;
-    display: none; 
+    
+     
     @media only screen and (min-width: 768px) {
       bottom: -1px;
       height: 80px;
