@@ -30,7 +30,7 @@ import smashingMag from 'common/assets/image/webAppMinimal/icons/smashing-mag.pn
 import twitter from 'common/assets/image/webAppMinimal/icons/twitter.png';
 import zeplin from 'common/assets/image/webAppMinimal/icons/zeplin.png';
 import zoom from 'common/assets/image/webAppMinimal/icons/zoom.png';
-import siteLogo from 'common/assets/image/webAppMinimal/logo.svg';
+import siteLogo from 'common/assets/image/webAppMinimal/landing-logo-footer.svg';
 import post1 from 'common/assets/image/webAppMinimal/post1.png';
 import post2 from 'common/assets/image/webAppMinimal/post2.png';
 import post3 from 'common/assets/image/webAppMinimal/post3.png';

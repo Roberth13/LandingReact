@@ -403,7 +403,7 @@
   "footerTop": {
     "about": {
       "logo": {
-        "src": "../../assets/image/webAppMinimal/logo.png",
+        "src": "../../assets/image/webAppMinimal/landing-logo-footer.svg",
         "alt": "Web App Creative"
       },
       "text": "We run Advanced Search reports on the criteria you care about to see how work is progressing and where to focus your effort."
